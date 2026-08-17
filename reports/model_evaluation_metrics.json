@@ -1,0 +1,79 @@
+{
+    "best_model": "Logistic Regression (Scorecard)",
+    "optimal_threshold": 0.8,
+    "best_f1_at_optimal_threshold": 0.5125,
+    "benchmark_comparison": {
+        "Logistic Regression (Scorecard)": {
+            "roc_auc": 0.8105,
+            "pr_auc": 0.4865,
+            "ks_statistic": 0.5222,
+            "f1_score": 0.4097,
+            "precision": 0.2935,
+            "recall": 0.6782,
+            "accuracy": 0.7875,
+            "brier_score": 0.1573
+        },
+        "Random Forest": {
+            "roc_auc": 0.8098,
+            "pr_auc": 0.4192,
+            "ks_statistic": 0.55,
+            "f1_score": 0.4978,
+            "precision": 0.4014,
+            "recall": 0.6552,
+            "accuracy": 0.8562,
+            "brier_score": 0.1235
+        },
+        "Gradient Boosting": {
+            "roc_auc": 0.797,
+            "pr_auc": 0.439,
+            "ks_statistic": 0.5003,
+            "f1_score": 0.3448,
+            "precision": 0.6897,
+            "recall": 0.2299,
+            "accuracy": 0.905,
+            "brier_score": 0.0761
+        },
+        "XGBoost Classifier": {
+            "roc_auc": 0.7887,
+            "pr_auc": 0.4217,
+            "ks_statistic": 0.5006,
+            "f1_score": 0.4344,
+            "precision": 0.3582,
+            "recall": 0.5517,
+            "accuracy": 0.8438,
+            "brier_score": 0.1142
+        }
+    },
+    "feature_importances": {},
+    "feature_names": [
+        "person_age",
+        "person_income",
+        "person_emp_length",
+        "loan_amnt",
+        "loan_int_rate",
+        "loan_percent_income",
+        "cb_person_cred_hist_length",
+        "debt_to_income",
+        "loan_to_age",
+        "cred_hist_to_age",
+        "emp_to_age",
+        "loan_grade_num",
+        "cb_person_default_num",
+        "home_rent",
+        "home_mortgage",
+        "home_own",
+        "home_other",
+        "intent_education",
+        "intent_medical",
+        "intent_venture",
+        "intent_personal",
+        "intent_debtconsolidation",
+        "intent_homeimprovement"
+    ],
+    "dataset_metadata": {
+        "total_records": 4000,
+        "train_records": 3200,
+        "test_records": 800,
+        "default_rate": 0.1087
+    }
+}
